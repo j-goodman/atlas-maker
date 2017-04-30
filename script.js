@@ -16,10 +16,9 @@ var placePins = function () {
   var map;
   var i; var j;
   map = JSON.parse(localStorage.getItem("map"));
-  console.log(JSON.stringify(map));
+  amendData(map);
   for (i = 0; i < map.allNames.length; i++) {
     for (j = 0; j < map[map.allNames[i]].length; j++) {
-      console.log();
       pin = document.createElement('PIN');
       pin.style.left = map[map.allNames[i]][j].x;
       pin.style.top = map[map.allNames[i]][j].y;
@@ -37,6 +36,25 @@ var placePins = function () {
       document.body.appendChild(pin);
     }
   }
+};
+
+var amendData = function (map) {
+  // console.log(map.Ontario[2]);
+  // map.Ontario[2].x -= 50;
+  // map.Ontario[2].y += 40;
+  // var i;
+  // for (i=0 ; i<map.Nunavut.length ; i++) {
+  //   if (i > 83) {
+  //     map.Nunavut[i].x += 59;
+  //     map.Nunavut[i].y += 2;
+  //   }
+  //   if (i > 117) {
+  //     map.Nunavut[i].x += 90;
+  //     map.Nunavut[i].y += 4;
+  //   }
+  // }
+  // localStorage.setItem("map", JSON.stringify(map));
+  console.log(JSON.stringify(map));
 };
 
 onkeydown = function (event) {
