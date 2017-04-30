@@ -1,0 +1,102 @@
+body {
+  background: #A3CCFF;
+}
+
+pin {
+  background: #000;
+  border: 1px solid #fff;
+  display: block;
+  height: 8px;
+  position: absolute;
+  width: 8px;
+  z-index: 3;
+}
+
+pin:hover {
+  background: #fff;
+  border: 1px solid #000;
+}
+
+#map-key {
+  display: none;
+  flex-direction: row;
+  position: fixed;
+  z-index: 3;
+}
+
+#submit-button {
+  background: #fff;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+#northern-canada,
+#southern-canada,
+#western-us,
+#northern-mexico,
+#nunavut,
+#alaska,
+#ontario {
+  position: absolute;
+}
+
+#northern-canada {
+  width: 1650px;
+  height: 500px;
+  left: 0px;
+  top: 130px;
+  z-index: 1;
+}
+
+#southern-canada {
+  width: 1350px;
+  height: 400px;
+  left: 430px;
+  top: 580px;
+}
+
+#western-us {
+  width: 1020px;
+  height: auto;
+  left: 700px;
+  top: 920px;
+  z-index: 1;
+}
+
+#northern-mexico {
+  width: 1300px;
+  height: auto;
+  left: 810px;
+  top: 1450px;
+}
+
+#nunavut {
+  width: 900px;
+  height: 620px;
+  left: 950px;
+  top: 0px;
+  z-index: 2;
+}
+
+#ontario {
+  width: 500px;
+  height: auto;
+  left: 1480px;
+  top: 623px;
+  z-index: 2;
+}
+
+#alaska {
+  width: 720px;
+  height: auto;
+  left: 0px;
+  top: 160px;
+  z-index: 2;
+}
+
+
+
+tracer-map {
+  display: flex;
+  flex-direction: column;
+}
