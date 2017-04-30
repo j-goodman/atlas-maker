@@ -4,7 +4,8 @@ body {
 
 pin {
   background: #000;
-  border: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
   display: block;
   height: 8px;
   position: absolute;
@@ -14,7 +15,8 @@ pin {
 
 pin:hover {
   background: #fff;
-  border: 1px solid #000;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
 }
 
 #map-key {
